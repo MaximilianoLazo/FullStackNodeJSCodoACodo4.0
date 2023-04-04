@@ -8,3 +8,65 @@
     background-color: #30343F;
 }
 */
+a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*HEADER VI HASTA EL MIN 36*/
+header{
+    background-color: aqua;
+    padding: 26px;
+}
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar__logo{
+    max-width: 300px;
+}
+.navbar__link{
+    font-size: 2 rem;
+    padding: 8px,16px;
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+}
+.navbar__link:hover{
+    background-color:blue;
+}
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: aqua;
+    
+}
+.submenu__item{
+    display: block;
+    padding: 8px, 16px;
+    font-size: 12px;
+
+}
+.with-submenu:hover .submenu{
+    display: block;
+}
