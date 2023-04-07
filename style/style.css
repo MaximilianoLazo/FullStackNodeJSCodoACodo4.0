@@ -13,6 +13,9 @@ TEXTOS USAR EM  = 1EM ES IGUAL A 16 PX
     background-color: #30343F;
 }
 */
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
 :root{
     /*VARIABLES*/
     
@@ -346,4 +349,12 @@ header{
     100%{
         opacity: 1;
     }
+}
+.footer-container{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
+.footer__copy{
+    margin-top: var(--spacing-36);
+   text-align: center; 
 }
