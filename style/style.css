@@ -67,6 +67,8 @@ TEXTOS USAR EM  = 1EM ES IGUAL A 16 PX
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
+    --spacing-4: 0.4rem;
+    --spacing-2: 0.2rem;
 
 
 
@@ -119,7 +121,7 @@ footer{
 }
 header{
     background-color: var(--dark-bg-solid);
-    padding: var(--spacing-36);
+    padding: var(--spacing-20);
 }
 
 .navbar {
@@ -337,7 +339,7 @@ header{
     text-transform: uppercase;
     background-color: var(--primary-solid);
     color: var(--light-font-solid);
-    padding: var(--spacing-8) var(--spacing-12);
+    padding: var(--spacing-4) var(--spacing-8);
     position: absolute;
     right: 0;
 }
@@ -352,9 +354,25 @@ header{
 }
 .footer-container{
     background-color: var(--dark-bg-solid);
-    padding: var(--spacing-68);
+    padding: var(--spacing-28);
 }
 .footer__copy{
     margin-top: var(--spacing-36);
    text-align: center; 
+}
+
+.login-container-grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.login-container-grid h3{
+    grid-column:  1 / 13;
+}
+.login-container-grid__mail{
+    grid-column: 4 / 9;
+}
+.login-container-grid__pass{
+    grid-column: 4 / 9;
 }
