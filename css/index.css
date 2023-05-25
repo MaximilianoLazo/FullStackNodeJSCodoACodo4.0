@@ -229,6 +229,7 @@ header {
     flex-direction: column;
     gap: var(--spacing-24);
     align-items: start;
+    
 }
 
 .collection__title {
@@ -425,4 +426,70 @@ header {
 .filter-values input {
     display: block;
     
+}
+
+/*PAG ITEM*/
+.collection__txt{
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+}
+.collection-item__promo {
+    
+    font-size: var(--font-xsmall);
+    color: var(--secondary-solid);
+    font-weight: 700;
+    
+    
+}
+.collection-item__promo a {
+    
+    text-decoration: underline;
+    
+    
+}
+.collection__tle {
+    font-family: var(--font-small);
+    font-size: var(--font-large);
+    text-transform: uppercase;
+}
+.collection__paragraph{
+    font-size: var(--font-small);
+}
+.collection__paragraph-price{
+    font-family: var(--font-jumbo);
+    font-size: var(--font-large);
+    text-transform: uppercase;
+    color: var(--dark-bg-solid);
+}
+.collection__input{
+    width: var(--spacing-36);
+    font-size: small;
+    text-align: center;
+    border: none;
+}
+.collection__btn{
+    
+    color: var(--light-bg-solid);
+    padding: var(--spacing-12);
+    background-color: var(--dark-bg-solid);
+    font-size: x-small;
+}
+.collection__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+    align-items: start;
+    
+}
+.collection__formdata{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    
+}
+.collection__formsubmit button{
+    padding: var(--spacing-12);
+    background-color: var(--primary-solid);
+    border: none;
+    color: var(--light-bg-solid);
 }
