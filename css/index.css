@@ -582,3 +582,74 @@ header {
     color: var(--secondary-solid);
 }
 
+
+/*LOGIN*/
+ .form-login{
+    margin-top: var(--spacing-68);
+    margin-bottom: var(--spacing-68);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-16);
+} 
+
+
+.form-login input{
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    font-size: large;
+}
+
+.form-login__title{
+    font-size: var(--font-jumbo)
+}
+.form-login__email{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-small);
+    gap: var(--spacing-12);
+    margin-bottom: var(--spacing-24);
+    align-items: center;
+    
+    
+}
+
+.form-login__pass{
+
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-small);
+    gap: var(--spacing-12);
+    align-items: center;
+    margin-bottom: var(--spacing-24);
+    
+}
+
+.form-login__go{
+
+    display: flex;
+    gap: var(--spacing-24);
+    justify-content: center;
+    margin-bottom: var(--spacing-24);
+}
+.form-login__go input{
+    padding: var(--spacing-8) var(--spacing-16);
+    
+    font-size: var(--font-xsmall);
+    background-color: var(--primary-solid);
+    border: none;
+    color: var(--light-bg-solid);
+}
+.form-login__go-check{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    font-size: small;
+}
+.form-login__link{
+    color: var(--secondary-solid);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: var(--font-xsmall)
+}
