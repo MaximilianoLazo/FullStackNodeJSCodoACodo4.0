@@ -493,3 +493,92 @@ header {
     border: none;
     color: var(--light-bg-solid);
 }
+
+/*REGISTER.HTML*/
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-12);
+    margin-top: var(--spacing-36);
+    margin-bottom: var(--spacing-36);
+}
+.form-register input{
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    font-size: large;
+}
+.form-register__title{
+    font-size: x-large;
+}
+.form-register__paragraph{
+    font-size: x-large;
+}
+.form-register__name{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-16);
+}
+.form-register__lastname{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    font-size: large;
+    align-items: center;
+    margin-bottom: var(--spacing-16);
+}
+.form-register__email{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    font-size: large;
+    align-items: center;
+    margin-bottom: var(--spacing-16);
+}
+.form-register__pass{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    font-size: large;
+    align-items: center;
+    margin-bottom: var(--spacing-16);
+}
+.form-register__rpass{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    font-size: large;
+    align-items: center;
+    margin-bottom: var(--spacing-16);
+}
+.form-register__register{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-36);
+}
+
+.form-register__register input{
+    padding: var(--spacing-8);
+    
+    font-size: x-small;
+    background-color: var(--primary-solid);
+    border: none;
+    color: var(--light-bg-solid);
+}
+.form-register__check{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    font-size: small;
+}
+.form-register__check a{
+    color: var(--secondary-solid);
+}
+
