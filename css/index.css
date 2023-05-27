@@ -755,3 +755,26 @@ header {
 .form-create__textarea{
     width: 500px;
 }
+.form-edit__imgs{
+    display: flex;
+    max-width: 150px;
+    gap: var(--spacing-16);
+    align-items: center;
+    justify-content: center;
+    font-size: x-small;
+    margin-bottom: var(--spacing-16);
+}
+.form-edit__imgs p{
+    border-top: 1px solid var(--primary-solid);
+}
+.form-edit__frente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-edit__frente p{
+    text-align: center;
+}
+.form-edit__dorso p{
+    text-align: center;
+}
