@@ -9,121 +9,124 @@
 </head>
 <body> 
     <header> <!-- Inicio Header -->
-        <nav>
-            <picture>
-                <a href="../../index.html">
+        <nav class="navbar container">
+            <picture class="nabvar__logo">
+                <a href="./index.html">
                     <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
                 </a>
             </picture>
-            <ul>
+            <ul class="navbar__menu">
+                
                 <li>
-                    <a href=".././shop.html">SHOP</a>
-                </li>
-                <li>
-                    <a href="./contact.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="./login.html">LOGIN</a>
-                </li>
-                <li>
-                    <a href="../../cart.html">
-                        <img src="../../img/icons/cart-icon.svg" alt="ícono de carrito">
-                    </a>
-                </li>
+                    <a class="navbar__link" href="./pages/contact.html">SALIR</a>
+                </li class="navbar__item">
+                
+                
             </ul>
         </nav>
     </header> <!--   Fin Header -->
     <main class="container">
-        <section>
-            <h2>CREAR NUEVO ITEM</h2>
+        <section class="form-create">
+            <h2 class="form-create__title">CREAR NUEVO ITEM</h2>
             <form action="/admin/create" method="POST" enctype="application/x-www-form-urlencoded">
-                <div>
-                    <label class="form__box--label" for="collection">Categoría:</label>
-                    <select class="form__box--select" name="collection" id="collection" required>
-                        <option value="" disabled selected hidden>Seleccionar</option>
-                        <option value="Figuras Coleccionables">Figuras Coleccionables</option>
-                        <option value="Llaveros">Llaveros</option>
-                        <option value="Remeras">Remeras</option>
-                    </select>
+                <div class="form-create__fusion">
+
+                
+                    <div class="form-create__category">
+                        <label class="form__box--label" for="collection">Categoría:</label>
+                        <select class="form__box--select" name="collection" id="collection" required>
+                            <option value="" disabled selected hidden>Seleccionar</option>
+                            <option value="Figuras Coleccionables">Figuras Coleccionables</option>
+                            <option value="Llaveros">Llaveros</option>
+                            <option value="Remeras">Remeras</option>
+                        </select>
+                    </div>
+                    <div class="form-create__licence">
+                        <label for="collection">Licencia:</label>
+                        <select name="collection" id="collection" required>
+                            <option value="" disabled selected hidden>Seleccionar</option>
+                            <option value="starwars">Star Wars</option>
+                            <option value="pokemon">Pokemon</option>
+                            <option value="harrypotter">Harry Potter</option>
+                        </select>
+                    </div>
+
                 </div>
-                <div>
-                    <label for="collection">Licencia:</label>
-                    <select name="collection" id="collection" required>
-                        <option value="" disabled selected hidden>Seleccionar</option>
-                        <option value="starwars">Star Wars</option>
-                        <option value="pokemon">Pokemon</option>
-                        <option value="harrypotter">Harry Potter</option>
-                    </select>
-                </div>
-                <div>
+                <div class="form-create__nameproduc">
                     <label for="name">Nombre del producto:</label>
                     <input type="text" name="name" id="name" placeholder="nombre del producto" required>
                 </div>
-                <div>
-                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción del producto" required></textarea>
+                <div class="form-create__textarea">
+                    <textarea class="form-create__textarea" name="description" id="description" cols="30" rows="10" placeholder="Descripción del producto" required></textarea>
                 </div>
-                <div>
-                    <label for="sku">SKU:</label>
-                    <input type="text" name="sku" id="sku" placeholder="ABCXXXYYY" required>
+                <div class="form-create__fusionSPS">
+
+                
+                    <div class="form-create__sku">
+                        <label for="sku">SKU:</label>
+                        <input type="text" name="sku" id="sku" placeholder="ABCXXXYYY" required>
+                    </div>
+                    <div class="form-create__price">
+                        <label for="price">Precio:</label>
+                        <input type="text" name="price" id="price" data-type="currency" placeholder="$ 0.000,00">
+                    </div>
+                    <div class="form-create__cant">
+                        <label for="stock">Stock:</label>
+                        <input type="number" min="0" name="stock" id="stock" placeholder="0 unidades" required>
+                    </div>
+                 </div>
+                <div class="form-create__groupdesdues">
+                    <div class="form-create__discount">
+                        <label for="discount">Descuento:</label>
+                        <input type="number" min="0" max="100" step="5" name="discount" id="discount" placeholder="0 %" required>
+                    </div>
+                    <div class="form-create__cuota">
+                        <label for="dues">Cuotas:</label>
+                        <select name="dues" id="dues">
+                            <option value="0">0 cuotas</option>
+                            <option value="3">3 cuotas</option>
+                            <option value="6">6 cuotas</option>
+                            <option value="9">9 cuotas</option>
+                            <option value="12">12 cuotas</option>
+                            <option value="18">18 cuotas</option>
+                            <option value="24">24 cuotas</option>
+                        </select>
+                    </div>
                 </div>
-                <div>
-                    <label for="price">Precio:</label>
-                    <input type="text" name="price" id="price" data-type="currency" placeholder="$ 0.000,00">
-                </div>
-                <div>
-                    <label for="stock">Stock:</label>
-                    <input type="number" min="0" name="stock" id="stock" placeholder="0 unidades" required>
-                </div>
-                <div>
-                    <label for="discount">Descuento:</label>
-                    <input type="number" min="0" max="100" step="5" name="discount" id="discount" placeholder="0 %" required>
-                </div>
-                <div>
-                    <label for="dues">Cuotas:</label>
-                    <select name="dues" id="dues">
-                        <option value="0">0 cuotas</option>
-                        <option value="3">3 cuotas</option>
-                        <option value="6">6 cuotas</option>
-                        <option value="9">9 cuotas</option>
-                        <option value="12">12 cuotas</option>
-                        <option value="18">18 cuotas</option>
-                        <option value="24">24 cuotas</option>
-                    </select>
-                </div>
-                <div>
+                
+                <div class="form-create__img">
                     <label for="img">Imagenes:</label>
                     <input type="file" name="img" id="img" multiple>    
                 </div>
-                <div>
-                    <input type="submit" value="Agregar Producto">
+                <div class="form-create__btn">
+                    <input class="form-create__btnchoose" type="submit" value="Agregar Producto">
                     <input type="reset" value="Limpiar">
                 </div>
             </form>
         </section>
     </main>
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../shop/shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="./register.html">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="./login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">CONTACTO</a>
-                    </li>
-                </ul>
-                <picture>
-                    <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-                </picture>
-            </nav>
-        </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>

@@ -653,3 +653,105 @@ header {
     align-items: center;
     font-size: var(--font-xsmall)
 }
+
+/*CREATE.HTML*/
+.form-create{
+    margin-top: var(--spacing-16);
+    margin-bottom: var(--spacing-16);
+    
+    
+    
+}
+.form-create label{
+    font-size: var(--font-small);
+    margin-right: var(--spacing-12);
+}
+.form-create__title{
+    font-size: var(--font-large);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--spacing-16);
+}
+.form-create__fusion{
+    display: flex;
+    gap: var(--spacing-36);
+    
+}
+.form-create__category{
+    display: block;
+    
+    margin-bottom: var(--spacing-16);
+    align-items: center;
+}
+.form-create__licence{
+    display: block;
+    margin-bottom: var(--spacing-16);
+    align-items: center;
+}
+.form-create__btn{
+    display: flex;
+    gap: var(--spacing-20);
+    
+}
+.form-create input{
+    font-size: var(--font-medium);
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+}
+.form-create__nameproduc{
+    align-items: center;
+    margin-bottom: var(--spacing-16);
+}
+.form-create__fusionSPS{
+    display: flex;
+    gap: var(--spacing-36);
+    
+    
+}
+.form-create__sku{
+    align-items: center;
+    margin-bottom: var(--spacing-16);
+}
+.form-create__price{
+    align-items: center;
+    margin-bottom: var(--spacing-16);
+    
+}
+.form-create__cant{
+    align-items: center;
+    margin-bottom: var(--spacing-16);
+}
+.form-create__img{
+    margin-bottom: var(--spacing-16);
+    align-items: center;
+}
+.form-create__img input{
+   border: none;
+   font-size: var(--font-xsmall);
+}
+.form-create__btnchoose{
+    border: none;
+}
+.form-create__btn input{
+    padding: var(--spacing-8) var(--spacing-16);
+    
+    font-size: x-small;
+    background-color: var(--primary-solid);
+    border: none;
+    color: var(--light-bg-solid);
+    
+}
+.form-create__groupdesdues{
+    display: flex;
+    gap: var(--spacing-36);
+}
+.form-create__discount{
+    display: block;
+}
+.form-create__cuota{
+    display: block;
+    margin-bottom: var(--spacing-16);
+}
+.form-create__textarea{
+    width: 500px;
+}
